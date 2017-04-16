@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00AEFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--按钮配色-->
+    <color name="btn_lightgreen">#009900</color>
+    <color name="btn_white">#FFFFFF</color>
+    <color name="bottomline">#dbdbdb</color>
+    <color name="btn_skyblue">#87CEEB</color>
+
+
+    <!--文字颜色-->
+    <color name="font_lightgreen">#009900</color>
+    <color name="font_white">#FFFFFF</color>
+    <color name="font_lightblue">#00AEFF</color>
+    <color name="font_purple">#8B008B</color>
+    <color name="font_lightpurple">#584F60</color>
+    <color name="font_gray">#848285</color>
+    <color name="font_light_gray">#d9d5dc</color>
+    <color name="font_red">#FF0000</color>
+    <color name="font_glary">#a7a3a3</color>
+
+    <!--背景配色-->
+    <color name="title_bg">#009900</color>
+    <color name="line_bg">#DDDDDD</color>
+    <color name="sx_bg">#F1F1F1</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_gray">#F2F2F2</color>
+    <color name="bg_lightblue">#00AEFF</color>
+    <color name="font_menu">#9FBACD</color>
+
+
+    <color name="light_gray">#e0e0e0e0</color>
+    <color name="light_gray2">#90e0e0e0</color>
+
+
+
+
+
+
+
+
+</resources>

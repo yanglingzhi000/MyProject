@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--
+    app：tabIndicatorcolor意思是选中的导航条的颜色。
+    app：tabSelectesTextColor是选中的导航条的文字颜色。
+    app：tabTextColor 是没有选中的导航条文字的颜色。
+    -->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_page1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/font_lightblue"
+        app:tabSelectedTextColor="@color/font_lightblue"
+        app:tabTextColor="@android:color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_page1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_homepae_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_lightblue">
+
+        <RelativeLayout
+            android:id="@+id/btn_homepage_leftmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_8">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@mipmap/menu" />
+            <!--<ImageButton-->
+                <!--android:id="@+id/ib_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="#00000000"-->
+                <!--android:src="@mipmap/search"/>-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_homepage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="背单词"
+            android:textColor="@color/font_white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/btn_homepage_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_8">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@mipmap/add" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_homepage_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_homepae_titlebar"
+        android:background="@mipmap/dividing_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_homepage_selcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/tabbar_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab1_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="单词页"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab2_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="短文页"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab3_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:text="群组"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+       <!-- <RelativeLayout
+            android:id="@+id/rl_homepage4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab4_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:text="运行维护"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_homepage_selcontent"
+        android:background="@mipmap/dividing_line" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_homepage_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divider_homepage"
+        android:layout_below="@+id/divider_homepage_titlebar">
+
+    </FrameLayout>
+
+</RelativeLayout>

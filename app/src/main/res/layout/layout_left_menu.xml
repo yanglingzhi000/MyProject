@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightblue"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ylz.android.myproject.customview.RoundImageView
+            android:id="@+id/riv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/title_logo"
+            imagecontrol:border_outside_color="#D5D5D3"
+            imagecontrol:border_thickness="3dp" />
+
+        <TextView
+            android:id="@+id/tv_avatar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理员"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tv_avatar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adminstrator"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/sp_15" />
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="克拉玛依"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_gray"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+</LinearLayout>
